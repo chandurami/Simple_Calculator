@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+</head>
+<body>
+    <script>
+        let a=[1,2,4,6,5];
+        even_sum(a);
+        function even_sum(a){
+            let sum=0;
+            for(let i=0;i<a.length;i++){
+                if(a[i]%2==0){
+                    sum=sum+a[i];
+                }
+            }
+            console.log("The sum of even numbers in array is ",sum);
+        }
+
+        // Person object
+        const Person = {
+        firstName: "Tuta",
+        lastName: "Prasanth",
+        age: 21,
+
+        
+        getFullName: function() {
+            return this.firstName + " " + this.lastName;
+        },
+
+        
+        incrementAge: function() {
+            this.age += 1;
+        }
+        };
+
+        
+        console.log(Person.getFullName()); // Output: John Doe
+        console.log("Age before increment: " + Person.age); 
+        Person.incrementAge();
+        console.log("Age after increment: " + Person.age);
+    </script>
+</body>
+</html>
